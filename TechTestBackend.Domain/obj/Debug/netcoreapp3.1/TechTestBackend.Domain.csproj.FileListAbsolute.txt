@@ -1,0 +1,9 @@
+C:\Development\TechTestBackend\TechTestBackend.Domain\bin\Debug\netcoreapp3.1\TechTestBackend.Domain.deps.json
+C:\Development\TechTestBackend\TechTestBackend.Domain\bin\Debug\netcoreapp3.1\TechTestBackend.Domain.dll
+C:\Development\TechTestBackend\TechTestBackend.Domain\bin\Debug\netcoreapp3.1\TechTestBackend.Domain.pdb
+C:\Development\TechTestBackend\TechTestBackend.Domain\obj\Debug\netcoreapp3.1\TechTestBackend.Domain.csprojAssemblyReference.cache
+C:\Development\TechTestBackend\TechTestBackend.Domain\obj\Debug\netcoreapp3.1\TechTestBackend.Domain.AssemblyInfoInputs.cache
+C:\Development\TechTestBackend\TechTestBackend.Domain\obj\Debug\netcoreapp3.1\TechTestBackend.Domain.AssemblyInfo.cs
+C:\Development\TechTestBackend\TechTestBackend.Domain\obj\Debug\netcoreapp3.1\TechTestBackend.Domain.csproj.CoreCompileInputs.cache
+C:\Development\TechTestBackend\TechTestBackend.Domain\obj\Debug\netcoreapp3.1\TechTestBackend.Domain.dll
+C:\Development\TechTestBackend\TechTestBackend.Domain\obj\Debug\netcoreapp3.1\TechTestBackend.Domain.pdb

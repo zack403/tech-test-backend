@@ -1,0 +1,9 @@
+C:\Development\TechTestBackend\TechTestBackend.DataAccess\bin\Debug\netcoreapp3.1\TechTestBackend.DataAccess.deps.json
+C:\Development\TechTestBackend\TechTestBackend.DataAccess\bin\Debug\netcoreapp3.1\TechTestBackend.DataAccess.dll
+C:\Development\TechTestBackend\TechTestBackend.DataAccess\obj\Debug\netcoreapp3.1\TechTestBackend.DataAccess.csprojAssemblyReference.cache
+C:\Development\TechTestBackend\TechTestBackend.DataAccess\obj\Debug\netcoreapp3.1\TechTestBackend.DataAccess.AssemblyInfoInputs.cache
+C:\Development\TechTestBackend\TechTestBackend.DataAccess\obj\Debug\netcoreapp3.1\TechTestBackend.DataAccess.AssemblyInfo.cs
+C:\Development\TechTestBackend\TechTestBackend.DataAccess\bin\Debug\netcoreapp3.1\TechTestBackend.DataAccess.runtimeconfig.json
+C:\Development\TechTestBackend\TechTestBackend.DataAccess\bin\Debug\netcoreapp3.1\TechTestBackend.DataAccess.runtimeconfig.dev.json
+C:\Development\TechTestBackend\TechTestBackend.DataAccess\obj\Debug\netcoreapp3.1\TechTestBackend.DataAccess.genruntimeconfig.cache
+C:\Development\TechTestBackend\TechTestBackend.DataAccess\obj\Debug\netcoreapp3.1\TechTestBackend.DataAccess.csproj.CoreCompileInputs.cache
