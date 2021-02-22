@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TechTestBackend.Domain.Enum;
 
 namespace TechTestBackend.Domain.Entities
 {
@@ -12,5 +13,6 @@ namespace TechTestBackend.Domain.Entities
         public DateTime ExpirationDate { get; set; }
         public string SecurityCode { get; set; }
         public decimal Amount { get; set; }
+        public PaymentState State { get; set; }
     }
 }

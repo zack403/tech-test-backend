@@ -13,7 +13,6 @@ namespace TechTestBackend.DataAccess
         }
 
         public DbSet<Payment> Payment { get; set; }
-        public DbSet<PaymentState> PaymentState { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
@@ -30,8 +29,13 @@ namespace TechTestBackend.DataAccess
                 .HasMaxLength(3);
             modelbuilder.Entity<Payment>().Property(x => x.Amount)
                 .IsRequired();
-           
 
+            // entity index definition
+            modelbuilder.Entity<Payment>().HasIndex(x => x.Id)
+                .IsUnique(false);
+            modelbuilder.Entity<Payment>().HasIndex(x => x.State)
+                .IsUnique(false);
+           
         }
     }
 }

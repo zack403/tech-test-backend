@@ -12,7 +12,16 @@ namespace TechTestBackend.DataAccess.Repositories
         public UnitOfWork(TechTestBackendContext context)
         {
             _context = context;
+            Payments = new PaymentRepository(_context);
+
         }
+        public IPaymentRepository Payments { get; private set; }
+
+        public int Complete()
+        {
+            return _context.SaveChanges();
+        }
+
         public async Task<int> CompleteAsync()
         {
             return await _context.SaveChangesAsync();

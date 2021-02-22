@@ -7,6 +7,8 @@ namespace TechTestBackend.Domain.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
+        IPaymentRepository Payments { get; }
+        int Complete();
         Task<int> CompleteAsync();
     }
 }
