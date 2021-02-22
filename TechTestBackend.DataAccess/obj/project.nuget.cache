@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZN95rb6illbfQCSiu3rOGT/+/L2YebWRrH4+vR35ZTJqyWvg5jr6ziJpjGsWUc3Nk9M70aGIXrOEHHfaTHVlyQ==",
+  "dgSpecHash": "WVrPigWf9qHPMDNBc3TC9NLkkDXOufcD1SJTNCtbWrnobccbIN2kWLrf57mGX1X1ufBwTjMIYWEMJLl5s+nxCw==",
   "success": true,
   "projectFilePath": "C:\\Development\\TechTestBackend\\TechTestBackend.DataAccess\\TechTestBackend.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Netop\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.3\\microsoft.entityframeworkcore.analyzers.5.0.3.nupkg.sha512",
     "C:\\Users\\Netop\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.3\\microsoft.entityframeworkcore.design.5.0.3.nupkg.sha512",
     "C:\\Users\\Netop\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.3\\microsoft.entityframeworkcore.relational.5.0.3.nupkg.sha512",
+    "C:\\Users\\Netop\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.3\\microsoft.entityframeworkcore.tools.5.0.3.nupkg.sha512",
     "C:\\Users\\Netop\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Netop\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\Netop\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
