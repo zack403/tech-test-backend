@@ -6,10 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TechTestBackend.DataAccess\TechTestBackend.DataAccess.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Dtos\" />
+    <ProjectReference Include="..\TechTestBackend.Gateways\TechTestBackend.Gateways.csproj" />
+    <ProjectReference Include="..\TechTestBackend.Services\TechTestBackend.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using TechTestBackend.API.Dtos;
 using TechTestBackend.Domain.Entities;
+using TechTestBackend.Domain.Enum;
 using TechTestBackend.Domain.Interfaces;
+using TechTestBackend.Dtos;
+using TechTestBackend.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,45 +20,49 @@ namespace TechTestBackend.API.Controllers
     [ApiController]
     public class PaymentController : ControllerBase
     {
-        private readonly IUnitOfWork _unitOfWork;
-        public PaymentController(IUnitOfWork unitOfWork)
+        private readonly ILogger<PaymentController> _logger;
+        private readonly IPaymentRequestService _paymentRequestService;
+
+        public PaymentController(IPaymentRequestService paymentRequestService, ILogger<PaymentController> logger)
         {
-            _unitOfWork = unitOfWork;
+            _logger = logger;
+            _paymentRequestService = paymentRequestService;
         }
-       
+
+        [HttpGet]
+        public string Get()
+        {
+            return "Payment Processor is online";
+        }
+
+
         [HttpPost]
-        public async Task<IActionResult> ProcessPayment([FromBody] PaymentDto model)
+        public async Task<IActionResult> Post(PaymentRequestDto paymentRequest)
         {
             try
             {
-                if (!ModelState.IsValid)
+                if (ModelState.IsValid)
                 {
+                    var paymentState = await _paymentRequestService.Pay(paymentRequest);
+                    var paymentResponse = new PaymentResponseDto()
+                    {
+                        IsProcessed = paymentState.PaymentState == PaymentStateEnum.Processed
+                        ,
+                        PaymentState = paymentState
+                    };
+
+                    if (!paymentResponse.IsProcessed)
+                        return StatusCode(500, new { error = "Payment could not be processed" });
+                    return Ok(paymentResponse);
+                }
+                else
                     return BadRequest(ModelState);
-                }
-
-                if (DateTime.Now > model.ExpirationDate)
-                {
-                    return BadRequest("Expiration Date cannot be in the past");
-                }
-
-                if (model.Amount <= 0)
-                {
-                    return BadRequest("Amount must be a positive number");
-                }
-
-                var paymentToProcess = JObject.FromObject(model, new JsonSerializer { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }).ToObject<Payment>();
-
-
-                var processedPayment = _unitOfWork.Payments.ProcessPayment(paymentToProcess);
-
-                return Ok();
             }
             catch (Exception ex)
             {
-                throw ex;
+                _logger.LogError(ex, ex.Message);
+                return StatusCode(500);
             }
-           
-
         }
     }
 }

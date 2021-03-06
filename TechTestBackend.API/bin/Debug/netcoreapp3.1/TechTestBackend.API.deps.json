@@ -26,6 +26,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Tools": "5.0.3",
           "TechTestBackend.DataAccess": "1.0.0",
+          "TechTestBackend.Gateways": "1.0.0",
+          "TechTestBackend.Services": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -505,6 +507,17 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Npgsql/5.0.2": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.6.0"
@@ -589,6 +602,41 @@
         },
         "compile": {
           "TechTestBackend.Domain.dll": {}
+        }
+      },
+      "TechTestBackend.Dtos/1.0.0": {
+        "dependencies": {
+          "TechTestBackend.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TechTestBackend.Dtos.dll": {}
+        },
+        "compile": {
+          "TechTestBackend.Dtos.dll": {}
+        }
+      },
+      "TechTestBackend.Gateways/1.0.0": {
+        "dependencies": {
+          "TechTestBackend.Domain": "1.0.0",
+          "TechTestBackend.Dtos": "1.0.0"
+        },
+        "runtime": {
+          "TechTestBackend.Gateways.dll": {}
+        },
+        "compile": {
+          "TechTestBackend.Gateways.dll": {}
+        }
+      },
+      "TechTestBackend.Services/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "TechTestBackend.Gateways": "1.0.0"
+        },
+        "runtime": {
+          "TechTestBackend.Services.dll": {}
+        },
+        "compile": {
+          "TechTestBackend.Services.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -2338,6 +2386,13 @@
       "path": "microsoft.extensions.primitives/5.0.0",
       "hashPath": "microsoft.extensions.primitives.5.0.0.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "Npgsql/5.0.2": {
       "type": "package",
       "serviceable": true,
@@ -2386,6 +2441,21 @@
       "sha512": ""
     },
     "TechTestBackend.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TechTestBackend.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TechTestBackend.Gateways/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TechTestBackend.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

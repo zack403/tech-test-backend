@@ -9,7 +9,7 @@ using TechTestBackend.Domain.Interfaces;
 
 namespace TechTestBackend.DataAccess.Repositories
 {
-    public abstract class TechTestBackendRepository<T> : ITechTestBackendRepository<T> where T : class
+    public class TechTestBackendRepository<T> : ITechTestBackendRepository<T> where T : class
     {
         protected readonly TechTestBackendContext _context;
         public TechTestBackendRepository(TechTestBackendContext context)
@@ -21,7 +21,7 @@ namespace TechTestBackend.DataAccess.Repositories
             return _context.Set<T>().AsNoTracking();
         }
 
-        public abstract Task<T> GetById(long id);
+        //public abstract Task<T> GetById(long id);
 
         public async Task<T> Create(T entity)
         {
@@ -34,11 +34,11 @@ namespace TechTestBackend.DataAccess.Repositories
             _context.Set<T>().Update(entity);
             await _context.SaveChangesAsync();
         }
-        public async Task Delete(long id)
-        {
-            var entity = await GetById(id);
-            _context.Set<T>().Remove(entity);
-            await _context.SaveChangesAsync();
-        }
+        //public async Task Delete(long id)
+        //{
+        //    //var entity = await GetById(id);
+        //    _context.Set<T>().Remove(entity);
+        //    await _context.SaveChangesAsync();
+        //}
     }
 }

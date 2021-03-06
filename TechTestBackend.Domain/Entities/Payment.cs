@@ -19,7 +19,7 @@ namespace TechTestBackend.Domain.Entities
         public string CardHolder { get; set; }
         [Required]
         public DateTime ExpirationDate { get; set; }
-        [Column(nameof(SecurityCode), TypeName = "nvarchar(3)")]
+        [Column(nameof(SecurityCode), TypeName = "varchar(3)")]
         public string SecurityCode { get; set; }
         [Required]
         [Range(0, double.MaxValue)]

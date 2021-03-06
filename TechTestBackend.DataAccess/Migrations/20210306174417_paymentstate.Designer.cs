@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using TechTestBackend.DataAccess;
@@ -9,9 +10,10 @@ using TechTestBackend.DataAccess;
 namespace TechTestBackend.DataAccess.Migrations
 {
     [DbContext(typeof(TechTestBackendContext))]
-    partial class TechTestBackendContextModelSnapshot : ModelSnapshot
+    [Migration("20210306174417_paymentstate")]
+    partial class paymentstate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

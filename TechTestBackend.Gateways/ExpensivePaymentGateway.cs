@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TechTestBackend.API.Dtos;
 using TechTestBackend.Domain.Enum;
+using TechTestBackend.Dtos;
 
 namespace TechTestBackend.Gateways
 {
     public class ExpensivePaymentGateway : IExpensivePaymentGateway
     {
-        public PaymentStateDto ProcessPayment(PaymentDto paymentRequest)
+        public PaymentStateDto ProcessPayment(PaymentRequestDto paymentRequest)
         {
             Random rnd = new Random();
             var num = rnd.Next(1, 12);

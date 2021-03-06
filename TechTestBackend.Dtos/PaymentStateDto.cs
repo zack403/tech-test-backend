@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 using TechTestBackend.Domain.Enum;
 
-namespace TechTestBackend.API.Dtos
+namespace TechTestBackend.Dtos
 {
     public class PaymentStateDto
     {

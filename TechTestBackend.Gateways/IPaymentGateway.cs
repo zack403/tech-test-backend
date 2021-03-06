@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TechTestBackend.API.Dtos;
+using TechTestBackend.Dtos;
 
 namespace TechTestBackend.Gateways
 {
     public interface IPaymentGateway
     {
-        PaymentStateDto ProcessPayment(PaymentDto paymentRequest);
+        PaymentStateDto ProcessPayment(PaymentRequestDto paymentRequest);
     }
 }

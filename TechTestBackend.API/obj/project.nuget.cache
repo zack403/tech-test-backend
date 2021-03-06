@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FcYWUo24zqFSFvQx9yNEcRgkzMCUnvoQ7OWFf8mvtoqv66UtCmx0ruOf5DGfR7bKxQ0jNe8v6rk/LktzgE24cw==",
+  "dgSpecHash": "f/fid7VAFJwlX+Wm5uMD61q4mj6e99DxhIcGKjhnmVMM3t1dQvyrdpBP4dRsU8wWhJyypnLdhzMAPW+IOK6Mtg==",
   "success": true,
   "projectFilePath": "C:\\Development\\TechTestBackend\\TechTestBackend.API\\TechTestBackend.API.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\Netop\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Netop\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\Netop\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Netop\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Netop\\.nuget\\packages\\npgsql\\5.0.2\\npgsql.5.0.2.nupkg.sha512",
     "C:\\Users\\Netop\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.2\\npgsql.entityframeworkcore.postgresql.5.0.2.nupkg.sha512",
     "C:\\Users\\Netop\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

@@ -15,11 +15,11 @@ namespace TechTestBackend.DataAccess.Repositories
         {
             _context = dbContext;
         }
-        public override async Task<PaymentState> GetById(long id)
-        {
-            return await _context.Set<PaymentState>()
-                .AsNoTracking()
-                .FirstOrDefaultAsync(e => e.PaymentId == id);
-        }
+        //public override async Task<PaymentState> GetById(long id)
+        //{
+        //    return await _context.Set<PaymentState>()
+        //        .AsNoTracking()
+        //        .FirstOrDefaultAsync(e => e.PaymentId == id);
+        //}
     }
 }

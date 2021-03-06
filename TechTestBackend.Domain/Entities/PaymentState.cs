@@ -15,7 +15,7 @@ namespace TechTestBackend.Domain.Entities
         [Required]
         public string State { get; set; }
         [Required]
-        [Column(nameof(CreatedDate), TypeName = "datetime")]
+        [Column(nameof(CreatedDate), TypeName = "date")]
         public DateTime CreatedDate { get; set; }
         public long PaymentId { get; set; }
         [ForeignKey(nameof(PaymentId))]

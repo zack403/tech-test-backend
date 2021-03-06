@@ -1,14 +1,15 @@
-﻿using Newtonsoft.Json;
+﻿
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using TechTestBackend.API.Dtos;
 using TechTestBackend.Domain.Entities;
 using TechTestBackend.Domain.Enum;
 using TechTestBackend.Domain.Interfaces;
+using TechTestBackend.Dtos;
 using TechTestBackend.Gateways;
 
 namespace TechTestBackend.Services
@@ -27,7 +28,7 @@ namespace TechTestBackend.Services
             _paymentRepository = paymentRepository;
             _paymentStateRepository = paymentStateRepository;
         }
-        public async Task<PaymentStateDto> Pay(PaymentDto paymentRequestDto)
+        public async Task<PaymentStateDto> Pay(PaymentRequestDto paymentRequestDto)
         {
             var paymentEntity = JObject.FromObject(paymentRequestDto, new Newtonsoft.Json.JsonSerializer { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }).ToObject<Payment>();
             paymentEntity = await _paymentRepository.Create(paymentEntity);
@@ -95,7 +96,7 @@ namespace TechTestBackend.Services
             throw new Exception("Payment could not be processed");
         }
 
-        private async Task<PaymentStateDto> ProcessPaymentStateDto(IPaymentGateway paymentGateway, PaymentDto paymentRequestDto, Payment paymentEntity)
+        private async Task<PaymentStateDto> ProcessPaymentStateDto(IPaymentGateway paymentGateway, PaymentRequestDto paymentRequestDto, Payment paymentEntity)
         {
             var paymentStateDto = paymentGateway.ProcessPayment(paymentRequestDto);
             var paymentStateEntityProcessed = new PaymentState() { Payment = paymentEntity, PaymentId = paymentEntity.PaymentId, CreatedDate = paymentStateDto.PaymentStateDate, State = paymentStateDto.PaymentState.ToString() };

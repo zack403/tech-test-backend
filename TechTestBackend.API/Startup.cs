@@ -14,6 +14,8 @@ using Microsoft.Extensions.Logging;
 using TechTestBackend.DataAccess;
 using TechTestBackend.DataAccess.Repositories;
 using TechTestBackend.Domain.Interfaces;
+using TechTestBackend.Gateways;
+using TechTestBackend.Services;
 
 namespace TechTestBackend.API
 {
@@ -39,10 +41,12 @@ namespace TechTestBackend.API
             services.AddControllers();
             services.AddDbContext<TechTestBackendContext>(p => p.UseNpgsql(Configuration.GetConnectionString("Default")));
             services.AddTransient<IUnitOfWork, UnitOfWork>();
-            services.AddTransient(typeof(ITechTestBackendRepository<>), typeof(TechTestBackendRepository<>));
-            services.AddTransient<IPaymentRepository, PaymentRepository>();
-            services.AddTransient<ICheapPaymentGateway, CheapPaymentGateway>();
-            services.AddTransient<IExpensivePaymentGateway, ExpensivePaymentGateway >();
+            services.AddScoped(typeof(ITechTestBackendRepository<>), typeof(TechTestBackendRepository<>));
+            services.AddScoped<ICheapPaymentGateway, CheapPaymentGateway>();
+            services.AddScoped<IExpensivePaymentGateway, ExpensivePaymentGateway>();
+            services.AddScoped<IPaymentRequestService, PaymentRequestService>();
+            services.AddScoped<IPaymentRepository, PaymentRepository>();
+            services.AddScoped<IPaymentStateRepository, PaymentStateRepository>();
 
         }
 

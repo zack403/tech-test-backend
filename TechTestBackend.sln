@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechTestBackend.API", "TechTestBackend.API\TechTestBackend.API.csproj", "{4C22B5E9-1989-4F33-903B-1B93CC736E5E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{105E8E88-8646-478C-AD43-82024F970693} = {105E8E88-8646-478C-AD43-82024F970693}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechTestBackend.Domain", "TechTestBackend.Domain\TechTestBackend.Domain.csproj", "{3FC79FB3-269E-473A-8692-A9FD6E170C9B}"
 EndProject
@@ -11,9 +14,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechTestBackend.DataAccess"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechTestBackend.Test", "TechTestBackend.Test\TechTestBackend.Test.csproj", "{D2091669-0119-4701-A4D6-577251A92AB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechTestBackend.Services", "TechTestBackend.Services\TechTestBackend.Services.csproj", "{A66417EE-C3C6-498C-85C5-B8FB61E5056C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechTestBackend.Services", "TechTestBackend.Services\TechTestBackend.Services.csproj", "{A66417EE-C3C6-498C-85C5-B8FB61E5056C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechTestBackend.Gateways", "TechTestBackend.Gateways\TechTestBackend.Gateways.csproj", "{105E8E88-8646-478C-AD43-82024F970693}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechTestBackend.Gateways", "TechTestBackend.Gateways\TechTestBackend.Gateways.csproj", "{105E8E88-8646-478C-AD43-82024F970693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechTestBackend.Dtos", "TechTestBackend.Dtos\TechTestBackend.Dtos.csproj", "{E5065630-F091-4A46-924C-722AF8793349}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +50,10 @@ Global
 		{105E8E88-8646-478C-AD43-82024F970693}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{105E8E88-8646-478C-AD43-82024F970693}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{105E8E88-8646-478C-AD43-82024F970693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5065630-F091-4A46-924C-722AF8793349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5065630-F091-4A46-924C-722AF8793349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5065630-F091-4A46-924C-722AF8793349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5065630-F091-4A46-924C-722AF8793349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

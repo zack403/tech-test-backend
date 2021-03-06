@@ -4,157 +4,6 @@
     "C:\\Development\\TechTestBackend\\TechTestBackend.Services\\TechTestBackend.Services.csproj": {}
   },
   "projects": {
-    "C:\\Development\\TechTestBackend\\TechTestBackend.API\\TechTestBackend.API.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Development\\TechTestBackend\\TechTestBackend.API\\TechTestBackend.API.csproj",
-        "projectName": "TechTestBackend.API",
-        "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.API\\TechTestBackend.API.csproj",
-        "packagesPath": "C:\\Users\\Netop\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\TechTestBackend\\TechTestBackend.API\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Netop\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "C:\\Development\\TechTestBackend\\TechTestBackend.DataAccess\\TechTestBackend.DataAccess.csproj": {
-                "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.DataAccess\\TechTestBackend.DataAccess.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Development\\TechTestBackend\\TechTestBackend.DataAccess\\TechTestBackend.DataAccess.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Development\\TechTestBackend\\TechTestBackend.DataAccess\\TechTestBackend.DataAccess.csproj",
-        "projectName": "TechTestBackend.DataAccess",
-        "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.DataAccess\\TechTestBackend.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Netop\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\TechTestBackend\\TechTestBackend.DataAccess\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Netop\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "C:\\Development\\TechTestBackend\\TechTestBackend.Domain\\TechTestBackend.Domain.csproj": {
-                "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.Domain\\TechTestBackend.Domain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.3, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\Development\\TechTestBackend\\TechTestBackend.Domain\\TechTestBackend.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -210,6 +59,65 @@
         }
       }
     },
+    "C:\\Development\\TechTestBackend\\TechTestBackend.Dtos\\TechTestBackend.Dtos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Development\\TechTestBackend\\TechTestBackend.Dtos\\TechTestBackend.Dtos.csproj",
+        "projectName": "TechTestBackend.Dtos",
+        "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.Dtos\\TechTestBackend.Dtos.csproj",
+        "packagesPath": "C:\\Users\\Netop\\.nuget\\packages\\",
+        "outputPath": "C:\\Development\\TechTestBackend\\TechTestBackend.Dtos\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Netop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Development\\TechTestBackend\\TechTestBackend.Domain\\TechTestBackend.Domain.csproj": {
+                "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.Domain\\TechTestBackend.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Development\\TechTestBackend\\TechTestBackend.Gateways\\TechTestBackend.Gateways.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -236,8 +144,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Development\\TechTestBackend\\TechTestBackend.API\\TechTestBackend.API.csproj": {
-                "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.API\\TechTestBackend.API.csproj"
+              "C:\\Development\\TechTestBackend\\TechTestBackend.Domain\\TechTestBackend.Domain.csproj": {
+                "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.Domain\\TechTestBackend.Domain.csproj"
+              },
+              "C:\\Development\\TechTestBackend\\TechTestBackend.Dtos\\TechTestBackend.Dtos.csproj": {
+                "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.Dtos\\TechTestBackend.Dtos.csproj"
               }
             }
           }
@@ -261,9 +172,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -298,9 +206,6 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Development\\TechTestBackend\\TechTestBackend.API\\TechTestBackend.API.csproj": {
-                "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.API\\TechTestBackend.API.csproj"
-              },
               "C:\\Development\\TechTestBackend\\TechTestBackend.Gateways\\TechTestBackend.Gateways.csproj": {
                 "projectPath": "C:\\Development\\TechTestBackend\\TechTestBackend.Gateways\\TechTestBackend.Gateways.csproj"
               }
@@ -332,9 +237,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
