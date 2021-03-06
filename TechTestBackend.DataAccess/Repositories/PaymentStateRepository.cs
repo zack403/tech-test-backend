@@ -8,16 +8,16 @@ using TechTestBackend.Domain.Interfaces;
 
 namespace TechTestBackend.DataAccess.Repositories
 {
-    public class PaymentRepository : TechTestBackendRepository<Payment>, IPaymentRepository
+    public class PaymentStateRepository : TechTestBackendRepository<PaymentState>, IPaymentStateRepository
     {
-        private readonly TechTestBackendContext _dbContext;
-        public PaymentRepository(TechTestBackendContext dbContext) : base(dbContext)
+        private readonly TechTestBackendContext _context;
+        public PaymentStateRepository(TechTestBackendContext dbContext) : base(dbContext)
         {
-            _dbContext = dbContext;
+            _context = dbContext;
         }
-        public override async Task<Payment> GetById(long id)
+        public override async Task<PaymentState> GetById(long id)
         {
-            return await _dbContext.Set<Payment>()
+            return await _context.Set<PaymentState>()
                 .AsNoTracking()
                 .FirstOrDefaultAsync(e => e.PaymentId == id);
         }

@@ -1,0 +1,16 @@
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\TechTestBackend.API.exe
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\TechTestBackend.Services.deps.json
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\TechTestBackend.Services.dll
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\TechTestBackend.API.dll
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\TechTestBackend.DataAccess.dll
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\TechTestBackend.Domain.dll
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\TechTestBackend.API.pdb
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\TechTestBackend.DataAccess.pdb
+C:\Development\TechTestBackend\TechTestBackend.Services\bin\Debug\netcoreapp3.1\TechTestBackend.Domain.pdb
+C:\Development\TechTestBackend\TechTestBackend.Services\obj\Debug\netcoreapp3.1\TechTestBackend.Services.csprojAssemblyReference.cache
+C:\Development\TechTestBackend\TechTestBackend.Services\obj\Debug\netcoreapp3.1\TechTestBackend.Services.AssemblyInfoInputs.cache
+C:\Development\TechTestBackend\TechTestBackend.Services\obj\Debug\netcoreapp3.1\TechTestBackend.Services.AssemblyInfo.cs
+C:\Development\TechTestBackend\TechTestBackend.Services\obj\Debug\netcoreapp3.1\TechTestBackend.Services.csproj.CopyComplete

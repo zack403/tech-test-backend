@@ -34,8 +34,6 @@ C:\Development\TechTestBackend\TechTestBackend.API\bin\Debug\netcoreapp3.1\Micro
 C:\Development\TechTestBackend\TechTestBackend.API\bin\Debug\netcoreapp3.1\TechTestBackend.DataAccess.pdb
 C:\Development\TechTestBackend\TechTestBackend.API\bin\Debug\netcoreapp3.1\TechTestBackend.Domain.pdb
 C:\Development\TechTestBackend\TechTestBackend.API\obj\Debug\netcoreapp3.1\TechTestBackend.API.csprojAssemblyReference.cache
-C:\Development\TechTestBackend\TechTestBackend.API\obj\Debug\netcoreapp3.1\TechTestBackend.API.csproj.CoreCompileInputs.cache
-C:\Development\TechTestBackend\TechTestBackend.API\obj\Debug\netcoreapp3.1\TechTestBackend.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Development\TechTestBackend\TechTestBackend.API\obj\Debug\netcoreapp3.1\TechTestBackend.API.csproj.CopyComplete
 C:\Development\TechTestBackend\TechTestBackend.API\obj\Debug\netcoreapp3.1\staticwebassets\TechTestBackend.API.StaticWebAssets.Manifest.cache
 C:\Development\TechTestBackend\TechTestBackend.API\obj\Debug\netcoreapp3.1\staticwebassets\TechTestBackend.API.StaticWebAssets.xml

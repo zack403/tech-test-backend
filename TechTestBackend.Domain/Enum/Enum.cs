@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TechTestBackend.Domain.Enum
 {
-     public enum PaymentState
+     public enum PaymentStateEnum
     {
         Pending = 1,
         Processed,

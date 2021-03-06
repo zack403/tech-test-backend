@@ -1,46 +1,44 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 using TechTestBackend.Domain.Interfaces;
 
 namespace TechTestBackend.DataAccess.Repositories
 {
-    public class TechTestBackendRepository<T> : ITechTestBackendRepository<T> where T : class
+    public abstract class TechTestBackendRepository<T> : ITechTestBackendRepository<T> where T : class
     {
         protected readonly TechTestBackendContext _context;
         public TechTestBackendRepository(TechTestBackendContext context)
         {
             _context = context;
         }
-        public void Add(T entity)
+        public IQueryable<T> GetAll()
         {
-            _context.Set<T>().Add(entity);
+            return _context.Set<T>().AsNoTracking();
         }
-        public void AddRange(IEnumerable<T> entities)
+
+        public abstract Task<T> GetById(long id);
+
+        public async Task<T> Create(T entity)
         {
-            _context.Set<T>().AddRange(entities);
+            var value = await _context.Set<T>().AddAsync(entity);
+            await _context.SaveChangesAsync();
+            return value.Entity;
         }
-        public IEnumerable<T> Find(Expression<Func<T, bool>> expression)
+        public async Task Update(long id, T entity)
         {
-            return _context.Set<T>().Where(expression);
+            _context.Set<T>().Update(entity);
+            await _context.SaveChangesAsync();
         }
-        public IEnumerable<T> GetAll()
+        public async Task Delete(long id)
         {
-            return _context.Set<T>().ToList();
-        }
-        public T GetById(int id)
-        {
-            return _context.Set<T>().Find(id);
-        }
-        public void Remove(T entity)
-        {
+            var entity = await GetById(id);
             _context.Set<T>().Remove(entity);
-        }
-        public void RemoveRange(IEnumerable<T> entities)
-        {
-            _context.Set<T>().RemoveRange(entities);
+            await _context.SaveChangesAsync();
         }
     }
 }

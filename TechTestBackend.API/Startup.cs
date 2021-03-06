@@ -41,6 +41,9 @@ namespace TechTestBackend.API
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient(typeof(ITechTestBackendRepository<>), typeof(TechTestBackendRepository<>));
             services.AddTransient<IPaymentRepository, PaymentRepository>();
+            services.AddTransient<ICheapPaymentGateway, CheapPaymentGateway>();
+            services.AddTransient<IExpensivePaymentGateway, ExpensivePaymentGateway >();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
